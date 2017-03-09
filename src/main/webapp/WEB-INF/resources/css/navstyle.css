@@ -1,0 +1,25 @@
+body {
+	position: relative;
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+	position: relative;
+	top: 50px;
+}
+
+.navbar-custom {
+	color: #072f52;
+	background-color: #072f52;
+	border-color: #041f3e;
+	border-radius: 0;
+}

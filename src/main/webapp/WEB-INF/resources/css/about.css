@@ -1,0 +1,52 @@
+.section1 {
+	
+}
+
+#logo {
+	width: 20%;
+	margin-top: 20px;
+}
+
+.section2 {
+	margin-top: 150px;
+	margin-bottom: 170px;
+}
+
+.panel-default {
+	box-shadow: 5px 5px 15px #000;
+	border-color: #578C71;
+}
+
+.jumbotron {
+	box-shadow: 5px 5px 15px #000;
+	background-color: #52847F;
+	color: #ffffff;
+	margin-top: 20px;
+	height: 500px;
+}
+
+#img1 {
+	margin-bottom: 20px;
+}
+
+.panel-body {
+	text-align: justify;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #52847F;
+	color: #ffffff;
+}
+
+.panel-default>.panel-heading {
+	background-color: #f2613c;
+	border-color: #f2613c;
+	color: #ffffff;
+}
+
+#shadow-brand {
+	box-shadow: 5px 5px 15px #000;
+}
+
+#brand {
+	margin-top: 60px;
+}

@@ -1,0 +1,21 @@
+Pack of          1
+
+Model Name       Shirt
+
+Style Code       HLSH008868 LEGION BLUE
+
+Fit              Slim
+
+Fabric           Cotton
+
+Sleeve           Full Sleeve
+
+Pattern          Soild
+
+Reversible       No
+
+Collar           MANDARIN COLLAR
+
+Fabric Care      Gentle Machine Wash in Lukewarm Water, Do Not Bleach
+
+Suitable For     Western Wear

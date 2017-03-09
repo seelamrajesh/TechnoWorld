@@ -1,0 +1,15 @@
+footer {
+	background-color: #072f52;
+	color: #ffffff;
+	font-size: 11px;
+	padding: 20px;
+}
+
+ul.unstyle {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	color: #ffffff;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+               http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+
+<var name="cart"  class="com.niit.shoponweb.model.Cart"/>  
+<var name="order"  class="com.niit.shoponweb.model.Orders"  /> 
+<var name="shipping" class="com.niit.shoponweb.model.Shipping"  /> 
+<var name="billing" class="com.niit.shoponweb.model.Billing"  /> 
+
+      
+<on-start>
+	  <evaluate expression="buyFlow.startFlow()" result="flowScope.order"/>
+	</on-start>
+<view-state id="flowExecutor" view="shippingaddress" model="shipping">
+<transition on="submitShipping" to="shippingAction"/>   
+</view-state>
+<action-state id="shippingAction">
+<evaluate expression="buyFlow.addShipping(flowScope.order,shipping,flowRequestContext)"></evaluate>
+<transition on="success" to="billDetais" />
+</action-state>
+<view-state id="billDetais" view="billingaddress" model="billing">
+<transition on="submitBill"  to="billAction"/>
+</view-state>
+<action-state id="billAction">
+<evaluate expression="buyFlow.addBilling(flowScope.order,billing,flowRequestContext)"></evaluate>
+<transition on="multi" to="multiorderDetais" ></transition>
+<transition on="one" to="orderDetais"></transition>
+</action-state>
+<view-state id="multiorderDetais" view="order" model="flowScope.order">
+<transition on="submitOrder"  to="confirmOrder"/>
+</view-state>
+<view-state id="orderDetais" view="oneorder" model="flowScope.order">
+<transition on="submitOrder"  to="confirmOrder"/>
+</view-state>
+<action-state id="confirmOrder">
+<evaluate expression="buyFlow.addOrder(flowScope.order)"></evaluate>
+<transition on="success" to="end" />
+</action-state>
+
+<end-state id="end" view="externalRedirect:contextRelative:/orderrequest?order=confirmed">
+</end-state>
+<view-state id="end_cancel" view="externalRedirect:contextRelative:/ordercancel?order=cancel"></view-state>
+<global-transitions>
+<transition on="cancel" to="end_cancel" ></transition>
+</global-transitions>
+
+
+</flow>

@@ -1,0 +1,21 @@
+Pack of          1
+
+Model Name       Shirt
+
+Style Code       HLSH009007 Grey
+
+Fit              Slim
+
+Fabric           Cotton
+
+Sleeve           Full Sleeve
+
+Pattern          Checkered
+
+Reversible       No
+
+Collar           REGULAR
+
+Fabric Care      Gentle Machine Wash in Lukewarm Water, Do Not Bleach
+
+Suitable For     Western Wear

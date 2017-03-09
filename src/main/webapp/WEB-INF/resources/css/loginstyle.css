@@ -1,0 +1,30 @@
+.vertical-offset-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.logo {
+	margin: auto;
+	width: 30%;
+	height: auto;
+}
+
+.input1 {
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.input2 {
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.button {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#hiderow {
+	display: none;
+}

@@ -1,0 +1,21 @@
+Pack of          1
+
+Model Name       Shirt
+
+Style Code       HLSH008836 EPIC KHAKI
+
+Fit              Slim
+
+Fabric           Cotton
+
+Sleeve           Full Sleeve
+
+Pattern          Solid
+
+Reversible       No
+
+Collar           REGULAR
+
+Fabric Care      Gentle Machine Wash in Lukewarm Water, Do Not Bleach
+
+Suitable For     Western Wear
